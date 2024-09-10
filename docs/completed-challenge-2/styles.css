@@ -1,0 +1,118 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(47, 88%, 63%);
+	height: 100vh;
+	font-family: 'Figtree', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+}
+
+h1:hover {
+	cursor: pointer;
+	color: hsl(47, 88%, 63%);
+}
+
+h4:focus {
+	cursor: pointer;
+	border-color: hsl(0, 0%, 42%);
+	outline: none;
+	box-shadow: 0 0 5px;
+}
+
+button {
+	padding: 6px 15px;
+	background-color: hsl(47, 88%, 63%);
+	border-radius: 5px;
+	font-weight: 800;
+	border: none;
+}
+button:focus {
+	cursor: pointer;
+	background-color: transparent;
+}
+
+p {
+	font-size: 16px;
+	color: hsl(0, 0%, 42%);
+}
+
+.illustration {
+	max-width: 100%;
+	border-radius: 9px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: start;
+	justify-content: center;
+	width: 360px;
+	background-color: hsl(0, 0%, 100%);
+	padding: 20px;
+	border-radius: 20px;
+	border: solid hsl(0, 0%, 7%) 1px;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.shadow {
+	border-right: solid hsl(0, 0%, 7%) 10px;
+	border-bottom: solid hsl(0, 0%, 7%) 10px;
+	border-radius: 35px;
+	border-bottom-right-radius: 30px;
+	margin-right: 10px;
+}
+.avatar-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 800;
+}
+.avatar {
+	width: 40px;
+}
+
+@media (max-width: 375px) {
+	body {
+		height: auto;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	h1 {
+		font-size: 18px;
+	}
+	button {
+		width: 100%;
+	}
+
+	.container {
+		width: 280px;
+	}
+
+	.avatar-container {
+		font-size: 12px;
+	}
+
+	.avatar {
+		width: 35px;
+	}
+}
