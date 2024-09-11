@@ -34,10 +34,7 @@ main {
 h1 {
 	font-weight: 700;
 }
-h5 {
-	color: hsl(75, 94%, 57%);
-	font-weight: 600;
-}
+
 p {
 	font-size: 14px;
 }
@@ -103,6 +100,11 @@ img {
 
 .list-container ul li a:hover {
 	color: hsl(0, 0%, 20%);
+}
+
+.address {
+	color: hsl(75, 94%, 57%);
+	font-weight: 600;
 }
 
 .attribution {
