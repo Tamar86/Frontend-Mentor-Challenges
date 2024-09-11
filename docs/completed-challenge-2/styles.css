@@ -66,6 +66,7 @@ p {
 	padding: 20px;
 	border-radius: 20px;
 	border: solid hsl(0, 0%, 7%) 1px;
+	box-shadow: 8px 8px 0px hsl(0, 0%, 7%);
 }
 .attribution {
 	font-size: 11px;
