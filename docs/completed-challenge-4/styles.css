@@ -81,7 +81,8 @@ span {
 }
 
 .section-intro__title {
-	font-size: 2.1rem;
+	font-size: 2.2rem;
+	letter-spacing: 0.04rem;
 	color: hsl(24, 5%, 18%);
 }
 
@@ -100,12 +101,14 @@ span {
 }
 
 .section-preparation__title {
+	font-size: 1.2rem;
 	color: hsl(332, 51%, 32%);
 }
 .section-nutrition__title,
 .section-ingredients__title,
 .section-instructions__title {
 	color: hsl(14, 45%, 36%);
+	letter-spacing: 0.04rem;
 }
 .section-nutrition__description,
 .section-intro-description {
