@@ -1,3 +1,5 @@
+/* Reset and Base Styles */
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -9,45 +11,36 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
-	/* height: 100vh; */
-	height: 960px;
-
+	min-height: 100vh;
+	line-height: 1.5;
 	background-color: hsl(0, 0%, 8%);
 	color: hsl(0, 0%, 100%);
-	font-family: inter, sans-serif;
+	font-family: 'inter', sans-serif;
 	font-weight: 400;
+	padding: 3.2rem;
+	font-size: 1rem;
 }
 
+/* Main Container */
+
 main {
-	width: 360px;
+	max-width: 100%;
+	width: 22.5rem;
 	background-color: hsl(0, 0%, 12%);
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 1.25rem;
 	align-items: center;
 	justify-content: center;
-	padding: 40px;
-	border-radius: 9px;
+	padding: 2.5rem;
+	border-radius: 0.6rem;
 }
 
-h1 {
-	font-weight: 700;
-}
-
-p {
-	font-size: 14px;
-}
-
-img {
-	border-radius: 50%;
-	width: 70px;
-}
-
+/* Layout */
 .container {
 	display: grid;
-	grid-template-rows: 1fr, 5px;
-	gap: 20px;
+	grid-template-rows: 1fr 0.3rem;
+	gap: 1.25rem;
 	align-items: center;
 	justify-content: center;
 }
@@ -57,60 +50,106 @@ img {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 30px;
+	gap: 1.9rem;
 }
-.name-container {
+
+.info-container__description {
+	font-size: 0.9rem;
+}
+
+.info-container__image {
+	display: block;
+	border-radius: 50%;
+	max-width: 100%;
+	width: 4.6rem;
+}
+.info-container__name {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 0.6rem;
 	align-items: center;
 	justify-content: center;
 }
-
-.list-container ul {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 15px;
-	list-style: none;
+.info-container__title {
+	font-weight: 700;
 }
 
-.list-container ul li {
-	display: flex;
-	flex-direction: column;
-	padding: 15px;
-	border-radius: 9px;
-	align-items: center;
-	background-color: hsl(0, 0%, 20%);
-	width: 300px;
-}
-
-.list-container ul li:hover {
-	cursor: pointer;
-	background-color: hsl(75, 94%, 57%);
-	color: hsl(0, 0%, 20%);
-}
-
-.list-container ul li a {
-	text-decoration: none;
-	color: hsl(0, 0%, 100%);
-	font-weight: 600;
-}
-
-.list-container ul li a:hover {
-	color: hsl(0, 0%, 20%);
-}
-
-.address {
+.info-container__address {
 	color: hsl(75, 94%, 57%);
 	font-weight: 600;
 }
 
-.attribution {
-	font-size: 11px;
+/* List Styling */
+.list-container__list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.9rem;
+	list-style: none;
+}
+
+.list-container__item {
+	border-radius: 0.6rem;
+}
+
+.list-container__link {
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	padding: 0.9rem;
+	border-radius: 0.6rem;
+	align-items: center;
+	background-color: hsl(0, 0%, 20%);
+	width: 18.5rem;
+}
+
+.list-container__link:hover {
+	color: hsl(0, 0%, 20%);
+}
+/* Accessibility: Hover and Focus Styles */
+.list-container__link {
+	transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Focus Styles for Link Items */
+.list-container__link:focus {
+	outline: transparent;
+	box-shadow: 0 0 0 3px hsl(75, 94%, 57%); /* Custom focus indicator with color */
+	transition: box-shadow 0.2s ease; /* Smooth transition for the focus effect */
+}
+
+/* Hover Styles */
+
+.list-container__link:hover {
+	cursor: pointer;
+	background-color: hsl(75, 94%, 57%);
+}
+
+/* Focus Style for Links */
+
+.list-container__link:hover {
+	color: hsl(0, 0%, 20%);
+}
+
+.list-container__link:focus {
+	color: hsl(0, 0%, 100%);
+}
+
+/* Attribution */
+
+.container__attribution {
+	font-size: 0.7rem;
 	text-align: center;
 }
-.attribution a {
+.container__attribution a {
 	color: hsl(228, 45%, 44%);
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+
+/* Focus State for Attribution Links */
+.container__attribution a:focus {
+	outline: transparent;
+	background-color: hsl(0, 1%, 19%);
 }
