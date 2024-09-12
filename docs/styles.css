@@ -9,7 +9,7 @@ body {
 	padding-top: 100px;
 }
 
-.main-container {
+.main {
 	display: grid;
 	grid-template-columns: 300px 1fr;
 	width: 1200px;

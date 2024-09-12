@@ -1,0 +1,190 @@
+/*CSS Reset */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: hsl(30, 54%, 90%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	gap: 2.2rem;
+	color: hsl(30, 10%, 34%);
+	font-family: 'Young Serif', serif;
+	font-weight: 400;
+	font-style: normal;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+}
+
+li {
+	margin-bottom: 1.1rem;
+	padding-left: 1rem;
+	font-family: 'Outfit', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+}
+
+span {
+	color: hsl(30, 10%, 34%);
+	font-weight: 700;
+}
+
+/* container */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	width: 45rem;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(0, 0%, 100%);
+	padding: 2.3rem 2.3rem 0 2.3rem;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+.header__image {
+	max-width: 100%;
+	width: 45rem;
+	border-radius: 0.5rem;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	background-color: hsl(0, 0%, 100%);
+	padding: 2.3rem;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+/* sections */
+
+.section-intro {
+	display: grid;
+	gap: 1.6rem;
+}
+
+.section-intro__title {
+	font-size: 2.1rem;
+	color: hsl(24, 5%, 18%);
+}
+
+.section-preparation {
+	background-color: hsl(330, 100%, 98%);
+	padding: 1.8rem;
+	border-radius: 1.2rem;
+	font-family: 'Outfit', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+}
+
+.section-nutrition {
+	display: grid;
+	gap: 1.4rem;
+}
+
+.section-preparation__title {
+	color: hsl(332, 51%, 32%);
+}
+.section-nutrition__title,
+.section-ingredients__title,
+.section-instructions__title {
+	color: hsl(14, 45%, 36%);
+}
+.section-nutrition__description,
+.section-intro-description {
+	font-family: 'Outfit', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+}
+
+.section-instructions__list,
+.section-ingredients__list,
+.section-preparation__list {
+	padding: 1.5rem;
+}
+.section-instructions__list li::marker,
+.section-preparation__list li::marker {
+	color: hsl(14, 45%, 36%);
+}
+
+.section-ingredients,
+.section-instructions {
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+/* Section table */
+
+.section-table__table {
+	border-collapse: collapse;
+	width: 100%;
+	font-family: 'Outfit', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+}
+
+.section-table__table tr td {
+	color: hsl(14, 45%, 36%);
+}
+
+.section-table__table tr th,
+.section-table__table tr td {
+	padding: 1rem;
+	text-align: left;
+}
+
+.section-table__table tr:not(:last-child) {
+	border-bottom: 1px solid hsl(30, 18%, 87%); /* Adds a horizontal line between table rows */
+}
+
+.footer__attribution {
+	font-size: 0.7rem;
+}
+
+@media (max-width: 450px) {
+	body {
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+	}
+	.header {
+		padding: 0 0 0 0;
+	}
+	.container {
+		padding: 0.5rem;
+	}
+}
+
+@media (max-width: 375px) {
+	body {
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+	}
+
+	.container {
+		padding: 0.1rem;
+	}
+
+	.section-intro__title {
+		font-size: 1.5rem;
+	}
+
+	.footer__attribution {
+		font-size: 0.5rem;
+	}
+}
